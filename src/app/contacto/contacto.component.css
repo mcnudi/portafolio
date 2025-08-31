@@ -1,0 +1,11 @@
+.contacto-portafolio {
+  padding: 20px;          /* Ajusta según quieras espacio interno */
+  margin: 0;              /* Elimina margen externo */
+  background-color: #cfd2d5; /* Color pergamino claro */
+  border-radius: 20px;    /* Opcional, bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sutil sombra */
+  /*font-family: 'Poppins', sans-serif;  */ /* Letra fina y elegante */
+  color: #5a3e1b;         /* Marrón oscuro para contraste con el fondo */
+  text-align: left;
+  width: 1000px;
+}

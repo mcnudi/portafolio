@@ -1,0 +1,92 @@
+<!--<div class="card mb-5 ms-5 me-5 ps-5 pe-5 bg-transparent" >
+<article>
+    <h1>Experiencia</h1>
+    <section>
+      <a href="mostrarDescripcion()"><h2 class="text-start p-3">Eviden (Grupo Atos) – Canal de Isabel II (Mar 2024 – May 2024)</h2></a>
+
+      <h3 class="text-start ps-5 pt-2">Programadora Java</h3>
+    <ul>
+      <li>Desarrollé microservicios REST para la gestión de incidencias en Java con JPA y SQL, integrando
+funcionalidades con JSP en el frontend.</li>
+      <li>Participé en reuniones ágiles semanales para la planificación y seguimiento de tareas</li>
+    </ul>
+    </section>
+    <section>
+      <h2 class="text-start p-3">Eviden (Grupo Atos) – Aguas de Barcelona (Ago 2022 – Feb 2024)</h2>
+      <h3 class="text-start p-3">Programadora Java Swing</h3>
+      <ul>
+        <li>Mantuve y evolucioné aplicaciones en Java Swing utilizadas en procesos internos clave.</li>
+        <li>Resolví incidencias y optimicé la integración con servicios SOAP y consultas SQL.</li>
+    </ul>
+    </section>
+    <section>
+      <h2 class="text-start p-3">Atos – Ayesa / Endesa Portugal (Feb 2022 – Jul 2022)</h2>
+      <h3 class="text-start p-3">Programadora Java</h3>
+      <ul>
+        <li>Desarrollé nuevas funcionalidades en aplicaciones de facturación energética utilizando Java y SQL.</li>
+    </ul>
+    </section>
+    <section>
+      <h2 class="text-start p-3">Atos – AENA (Ago 2021 – Feb 2022)</h2>
+      <h3 class="text-start p-3">Programadora Java</h3>
+       <ul>
+        <li>Mantuve aplicaciones Java con Spring y Weblogic, mejorando estabilidad y corrigiendo errores.</li>
+    </ul>
+    </section>
+    <section>
+      <h2 class="text-start p-3">Atos – Aliseda / Banco Popular (Abr 2015 – Jul 2021)</h2>
+      <h3 class="text-start p-3">Analista funcional y técnica</h3>
+      <ul>
+        <li>Gestioné procesos DTSX para sincronización con Salesforce, liderando tres migraciones que redujeron
+considerablemente los tiempos de procesamiento.
+        </li>
+        <li>Recogí requisitos funcionales, coordiné con usuarios y documenté procesos para facilitar la mantenibilidad.
+        </li>
+    </ul>
+    </section>
+    <section>
+      <h2 class="text-start p-3">Atos – Bankia (Oct 2012 – Abr 2015)</h2>
+      <h3 class="text-start p-3">Coordinadora técnica y programadora Java Swing</h3>
+      <ul>
+        <li>
+            Coordiné tareas del equipo técnico en la factoría ATOS, asegurando entregas a tiempo.
+        </li>
+        <li>
+            Desarrollé nuevas funcionalidades para una aplicación de escritorio con Java Swing.
+        </li>
+        <li>
+            Desarrollé diseños tecnicos a partir de documentos funcionales para las distintas factorias de software.
+        </li>
+        <li>
+        La lógica de negocio de la aplicación estaba conectada a procesos en host, con los que
+interactuábamos para consultar y modificar información bancaria en tiempo real.
+</li>
+    </ul>
+
+    </section>
+  </article>
+</div>-->
+
+<kendo-timeline [events]="events" [collapsibleEvents]="true" [alterMode]="true">
+  <ng-template kendoTimelineItemTemplate let-event>
+    <h2 class="text-start p-3 titulo-evento">{{ event.title }}</h2>
+    <h3 class="text-start p-3">{{ event.subtitle }}</h3>
+    <h3 class="text-start p-3">{{ event.date }}</h3>
+    
+    <div [innerHTML]="event.description"></div>
+  </ng-template>
+</kendo-timeline>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
