@@ -1,0 +1,98 @@
+.foto-portafolio {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%; /* asegura que quede redonda */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: block;
+  margin: 0 auto; /* centra en su contenedor */
+}
+
+.icono {
+  position: absolute;
+  background: transparent;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+  color: #f18080;
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.2);*/
+  /*transition: transform 0.2s;*/
+}
+.btn-celeste {
+  background-color: #72a8bc; /* celeste */
+  /*color: white;  */           /* texto blanco */
+  border: none;
+  font-size: 30px; /* aumenta o reduce a tu gusto */
+  font-weight: 500;
+}
+
+.btn-celeste:hover {
+  background-color: #009acd; /* un celeste más oscuro al pasar el ratón */
+}
+
+/*.icono:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}*/
+.animado {
+  transform: scale(1);
+}
+
+/* Posiciones de los iconos */
+/*.posicion-top   { top: -50px; left: 50%; transform: translateX(-50%); }
+.posicion-right { right: -50px; top: 50%; transform: translateY(-50%); }
+.posicion-bottom{ bottom: -50px; left: 50%; transform: translateX(-50%); }
+.posicion-left  { left: -50px; top: 50%; transform: translateY(-50%); }
+*/
+.desplazar-derecha {
+  animation: moverDerecha 0.4s ease forwards;
+}
+.desplazar-derecha1 {
+  animation: moverDerecha1 0.6s ease forwards;
+}
+
+@keyframes moverDerecha {
+  from {
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-10vw, 0vh); /* Ajusta el desplazamiento sobre mi */
+    opacity: 1;
+  }
+}
+@keyframes moverDerecha1 {
+  from {
+    transform: translate(-10vw,-10vh);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0vw, 0vh); /* Ajusta el desplazamiento experiencia*/
+    opacity: 1;
+  }
+}
+
+.desplazar-arriba {
+  animation: subir 0.6s ease forwards;
+}
+
+@keyframes subir {
+  from {
+    transform: translateY(800px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-200px); /* Ajusta el desplazamiento */
+    opacity: 1;
+  }
+}
+
+.contenedor-pergamino {
+  background: #f9f5e7;
+  border: 2px solid #c2a968;
+  border-radius: 8px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+

@@ -1,0 +1,9 @@
+.nombre-portafolio {
+  /*font-family: 'Tangerine', serif;*/ /* elegante y fina */
+  font-weight: 300;                        /* letra más delgada */
+  font-size: clamp(30px, 5vw, 60px);      /* tamaño responsive */
+  color: #95491d;                          /* marrón pergamino */
+  text-align: center;
+  white-space: nowrap;                     /* una sola línea */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3); /* mejora legibilidad */
+}

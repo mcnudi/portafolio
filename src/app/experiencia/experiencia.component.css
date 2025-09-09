@@ -1,0 +1,37 @@
+li{
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.exper-portafolio {
+  font-family: 'Poppins', sans-serif; 
+  font-size: clamp(14px, 5vw, 28px); /* tamaño responsive */
+  font-weight: bold;
+  color: #f5cece; /* blanco para resaltar sobre el fondo */
+  margin: 20px 0;
+  /*text-shadow: 2px 2px 6px rgba(0,0,0,0.5);*/ /* opcional: mejora la legibilidad sobre la imagen */
+}
+/*.fondo-pergamino {
+  background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+}*/
+
+:host ::ng-deep h2 {
+  font-size: 1.5rem; /* tamaño clásico de h2 */
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+:host ::ng-deep h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0.3rem 0;
+}
+
+.titulo-evento {
+  background-color: #007bff; /* azul */
+}
