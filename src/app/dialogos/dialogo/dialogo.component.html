@@ -1,21 +1,48 @@
 <div class="fondo p-0">
 <h2 class="titulo" mat-dialog-title>Bienvenido al chatbox</h2>
+
 <mat-dialog-content>
-    <div class="d-flex" >
+    <div class="d-flex">
  <mat-form-field appearance="fill">
-  <textarea matInput rows="28" cols="55"></textarea>
+  <textarea matInput rows="28" cols="55" [(ngModel)]="area1" readonly></textarea>
 </mat-form-field>
 </div>
 <div class="d-flex">
 <mat-form-field appearance="fill">
-  <textarea matInput placeholder="introduzca una frase" rows="4" cols="55"></textarea>
+  <textarea matInput placeholder="introduzca una frase" rows="4" cols="55" [(ngModel)]="area2"></textarea>
 </mat-form-field>
 </div>
 </mat-dialog-content>
 <mat-dialog-actions>
     <div class="d-flex gap-4">
-   <button mat-button class="btn-celeste">Enviar</button>
-  <button mat-button mat-dialog-close class="btn-celeste">Cerrar</button>
+   <button mat-button class="btn-celeste" (click)="enviar()">Enviar</button>
+  <button mat-button mat-dialog-close class="btn-celeste" (click)="enviarCorreo()">Cerrar</button>
   </div>
 </mat-dialog-actions>
 </div>
+
+<!--<form #contactForm="ngForm" (ngSubmit)="getDataForm(contactForm)">
+    <div class="mb-3">
+      <label class="form-label" for="nombre">Nombre</label>
+      <input class="form-control" type="text" id="nombre" name="nombre" ngModel placeholder="introduce tu nombre">
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="email">Email</label>
+      <input class="form-control" type="email" id="email" name="email" ngModel>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="telefono">Telefono</label>
+      <input class="form-control" type="tel" id="telefono" name="telefono" ngModel>
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="tipo">Tipo de contacto</label>
+      <select name="" id="tipo" name="tipo" ngModel class="form-select">
+        <option value="">Selecciona tipo de contacto</option>
+        <option value="laboral">laboral</option>
+        <option value="personal">personal</option>
+      </select>
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-success">
+
+  </form>
+-->
