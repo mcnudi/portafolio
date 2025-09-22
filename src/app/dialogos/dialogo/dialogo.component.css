@@ -1,0 +1,34 @@
+.btn-celeste {
+  background-color: #72a8bc!important; /* celeste */
+  /*color: white;  */           /* texto blanco */
+  border: none;
+  font-size: 30px; /* aumenta o reduce a tu gusto */
+  font-weight: 500;
+}
+
+.btn-celeste:hover {
+  background-color: #009acd; /* un celeste más oscuro al pasar el ratón */
+}
+mat-form-field {
+  width: 100%;
+  height: 100%;
+  
+}
+.fondo{
+    background:#efd184;
+}
+
+
+textarea[matInput] {
+  background-color: #cfd2d5; /* celeste claro */
+}
+
+.titulo {
+  /*font-family: 'Tangerine', serif;*/ /* elegante y fina */
+  font-weight: 300;                        /* letra más delgada */
+  font-size: clamp(20px, 5vw, 40px);      /* tamaño responsive */
+  color: #95491d;                          /* marrón pergamino */
+  text-align: center;
+  white-space: nowrap;                     /* una sola línea */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3); /* mejora legibilidad */
+}
