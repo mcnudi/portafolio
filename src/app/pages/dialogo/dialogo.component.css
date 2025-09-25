@@ -2,7 +2,7 @@
   background-color: #72a8bc!important; /* celeste */
   /*color: white;  */           /* texto blanco */
   border: none;
-  font-size: 30px; /* aumenta o reduce a tu gusto */
+  font-size: 30px; 
   font-weight: 500;
 }
 
@@ -21,6 +21,7 @@ mat-form-field {
 
 textarea[matInput] {
   background-color: #cfd2d5; /* celeste claro */
+  font-size: 30px;
 }
 
 .titulo {

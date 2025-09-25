@@ -29,6 +29,7 @@ export class DialogoComponent {
 
     emailjs.send("service_l2q5bys", "template_smgt7q7", templateParams, "j37vSPI28NYMwdbQf")
       .then(() => {
+        if (this.area1.length!==0)
         alert("Correo enviado con éxito ✅");
       })
       .catch((err) => {
