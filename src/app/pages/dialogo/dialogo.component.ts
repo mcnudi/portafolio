@@ -22,6 +22,10 @@ export class DialogoComponent {
   }
 
   enviarCorreo() {
+    if (!this.area1 || this.area1.trim().length === 0) {
+    console.log("No se envía, el chat está vacío.");
+    return; // 🔹 Salimos sin mandar nada
+  }
     const templateParams = {
       mensaje: this.area1,
       email:'mcnudi@gmail.com'

@@ -4,9 +4,9 @@ import { ContactoComponent } from '../contacto/contacto.component';
 import { SobremiComponent } from '../sobremi/sobremi.component';
 import { Router, RouterLink } from '@angular/router';
 import { ExperienciaComponent } from '../experiencia/experiencia.component';
-import { TestimoniosComponent } from '../../testimonios/testimonios.component';
+import { TestimoniosComponent } from '../testimonios/testimonios.component';
 import { MatIconModule } from '@angular/material/icon';
-import { DialogoComponent } from '../../dialogos/dialogo/dialogo.component';
+import { DialogoComponent } from '../dialogo/dialogo.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
