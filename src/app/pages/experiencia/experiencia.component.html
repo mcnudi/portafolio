@@ -67,7 +67,7 @@ interactuábamos para consultar y modificar información bancaria en tiempo real
   </article>
 </div>-->
 
-<kendo-timeline [events]="events" [collapsibleEvents]="true" [alterMode]="true">
+<!--<kendo-timeline [events]="events" [collapsibleEvents]="true" [alterMode]="true">
   <ng-template kendoTimelineItemTemplate let-event>
     <h2 class="text-start p-3 titulo-evento">{{ event.title }}</h2>
     <h3 class="text-start p-3">{{ event.subtitle }}</h3>
@@ -75,7 +75,39 @@ interactuábamos para consultar y modificar información bancaria en tiempo real
     
     <div [innerHTML]="event.description"></div>
   </ng-template>
-</kendo-timeline>
+</kendo-timeline>-->
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="timeline">
+        @for (exp of experiencias; track exp.empresa; let i = $index) {
+          @if(i % 2 === 0){
+            <div class="timeline-item left" (click)="descripcion(exp)">
+              <div class="timeline-content">
+               <h5><strong>{{exp.empresa}}-{{exp.cliente}}</strong></h5>
+               <p class="w-100">{{exp.cargo}}</p>
+              <!-- <small class="text-muted">{{ exp.fecha }}</small>-->
+           <!-- <p>Proyecto de microservicios con Java y Spring Boot</p>-->
+               </div>
+        </div>
+          }@else{
+             <div class="timeline-item right" (click)="descripcion(exp)">
+          <div class="timeline-content">
+            <h5><strong>{{exp.empresa}}-{{exp.cliente}}</strong></h5>
+            <!--<p>CRM Salesforce - Análisis funcional</p>-->
+            <p class="w-100">{{exp.cargo}}</p>
+           <!--<small class="text-muted">{{ exp.fecha }}</small>-->
+          </div>
+        </div>
+          }
+        
+
+       
+      }
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

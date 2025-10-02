@@ -35,3 +35,55 @@ li{
 .titulo-evento {
   background-color: #007bff; /* azul */
 }
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 900px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 70%; /* línea en el centro */
+  width: 4px;
+  background: #0d6efd;
+  transform: translateX(-50%);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 90%;        /* mitad de la pantalla */
+  padding: 1rem;
+ 
+}
+
+.timeline-item.left {
+  left: 0;           /* pegado al lado izquierdo */
+  text-align: right;
+  padding-right: 70px;
+  /*width: 50%;*/
+}
+
+.timeline-item.right {
+  left: 82%;         /* pegado al lado derecho */
+  text-align: left;
+  padding-left: 30px;
+  /*width: 50%; */
+}
+
+.timeline-content {
+  background-color: #cfd2d5 !important;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px; 
+  word-wrap: break-word;
+}
