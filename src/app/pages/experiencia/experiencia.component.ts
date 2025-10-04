@@ -81,7 +81,7 @@ ngOnInit():void{
 
   descripcion(exp:Iexperiencia){
 this.dialog.open(DescripcionComponent, {
-      width: '500px',
+      width: '700px',
       data: exp
     });
   }

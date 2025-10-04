@@ -9,9 +9,9 @@
     <div class="d-flex flex-column gap-2 w-50 mt-5 mb-5">
         <button class="btn btn-celeste" (click)="mostrar('sobremi')">Sobre mí</button>
         <button class="btn btn-celeste" (click)="mostrar('experiencia')">Experiencia Profesional</button>
-         <button class="btn btn-celeste" (click)="mostrar('experiencia')">Experiencia Práctica</button>
-          <button class="btn btn-celeste" (click)="mostrar('experiencia')">Tecnologias Clave</button>
-          <button class="btn btn-celeste" (click)="mostrar('experiencia')">Formación</button>
+         <button class="btn btn-celeste" (click)="mostrar('experienciaP')">Experiencia Práctica</button>
+          <button class="btn btn-celeste" (click)="mostrar('tecnologia')">Tecnologias Clave</button>
+          <button class="btn btn-celeste" (click)="mostrar('formacion')">Formación</button>
       </div>
 
        <!--Contacto fijo-->
@@ -41,6 +41,9 @@
        <div class="col-lg-6 col-md-6 col-sm-12 text-center desplazar-derecha1">
       <app-experiencia></app-experiencia>
     </div> 
+    }
+    @else if (icono==='formacion'){
+      <app-formacion></app-formacion>
     }
      </div>
      <div class="col-lg-4 col-md-5 col d-flex justify-content-end align-items-end p-4">
