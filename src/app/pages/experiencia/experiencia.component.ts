@@ -71,8 +71,6 @@ interactuábamos para consultar y modificar información bancaria en tiempo real
     
   ];
 
-  
-
 ngOnInit():void{
   this.experiencias.sort((a,b)=>
     new Date(b.fecha).getTime() - new Date(a.fecha).getTime()
