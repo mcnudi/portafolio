@@ -75,7 +75,7 @@ interactuábamos para consultar y modificar información bancaria en tiempo real
 
 ngOnInit():void{
   this.experiencias.sort((a,b)=>
-    new Date(a.fecha).getTime() - new Date(b.fecha).getTime()
+    new Date(b.fecha).getTime() - new Date(a.fecha).getTime()
 );
 }
 
@@ -87,5 +87,15 @@ this.dialog.open(DescripcionComponent, {
       data: exp
     });
   }
-  
+ 
+  lastYear: string = '';
+
+showYear(fecha: string): boolean {
+  const year = new Date(fecha).getFullYear().toString();
+  if (this.lastYear !== year) {
+    this.lastYear = year;
+    return true;
+  }
+  return false;
+}
 }

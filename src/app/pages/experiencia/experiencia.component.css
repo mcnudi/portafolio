@@ -87,3 +87,20 @@ li{
   min-height: 200px; 
   word-wrap: break-word;
 }
+
+.timeline-year {
+  position: relative;
+  width: 162%;
+  text-align: center;
+  margin: 2rem 0;   /* espacio arriba y abajo */
+}
+
+.timeline-year span {
+  background: #95491d;       /* fondo blanco para que corte la línea */
+  padding: 5px 15px;
+  border: 2px solid #0d6efd;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #efd184;;
+}
