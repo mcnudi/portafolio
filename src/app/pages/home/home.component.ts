@@ -8,10 +8,11 @@ import { TestimoniosComponent } from '../testimonios/testimonios.component';
 import { MatIconModule } from '@angular/material/icon';
 import { DialogoComponent } from '../dialogo/dialogo.component';
 import { MatDialog } from '@angular/material/dialog';
+import { FormacionComponent } from '../formacion/formacion.component';
 
 @Component({
   selector: 'app-home',
-  imports: [MatIconModule, NombreComponent,ContactoComponent,SobremiComponent,RouterLink,ExperienciaComponent, TestimoniosComponent],
+  imports: [MatIconModule, NombreComponent,ContactoComponent,SobremiComponent,RouterLink,ExperienciaComponent, TestimoniosComponent, FormacionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 
@@ -64,11 +65,11 @@ export class HomeComponent {
   mostrar(valor:string){
     
       this.icono=valor;
-    if (valor==="sobremi"){
+   // if (valor==="sobremi"){
       //this.router.navigate(['/sobremi']);
-    }else if (valor==="experiencia"){
+    //}else if (valor==="experiencia"){
       //this.router.navigate(['/experiencia']);
-    }
+    //}
     
 }
   

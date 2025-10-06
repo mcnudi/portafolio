@@ -1,4 +1,4 @@
-.bocadillo{
+/*.bocadillo{
     background-color: #cfd2d5; 
     padding-bottom: 20px;
     padding-top: 20px;
@@ -6,6 +6,6 @@
     padding-right: 20px;
     border-radius: 50px;
     display: inline-block;         /* Se ajusta al contenido */
-    min-width: 400px;   /* 🔹 más largo mínimo */
-  max-width: 90%;         /* Tamaño mínimo */
-}
+    /*min-width: 400px; */  /* 🔹 más largo mínimo */
+  /*max-width: 90%;   */      /* Tamaño mínimo */
+/*}*/
