@@ -8,7 +8,14 @@
        <!--Botones -->
     <div class="d-flex flex-column gap-2 w-50 mt-5 mb-5">
         <button class="btn btn-celeste" (click)="mostrar('sobremi')">Sobre mí</button>
-        <button class="btn btn-celeste" (click)="mostrar('experiencia')">Experiencia</button>
+        <button class="btn btn-celeste" (click)="mostrar('experiencia')">Experiencia Profesional</button>
+        <button class="btn btn-celeste" (click)="mostrar('experienciaP')">Experiencia Práctica</button>
+        <button class="btn btn-celeste" (click)="mostrar('tecnologia')">Tecnologias Clave</button>
+        <button class="btn btn-celeste" (click)="mostrar('formacion')">Formación</button>
+        <!--<button class="btn btn-celeste" (click)="mostrar('descarga')">Descargar curriculum</button>-->
+        <a class="btn btn-celeste" href="/CVMCarmenNudi.pdf" download>
+      Descargar CV
+      </a>
       </div>
 
        <!--Contacto fijo-->
@@ -27,7 +34,7 @@
     </div>
     @if (icono==='test'){
     <app-testimonios></app-testimonios>
-}
+    }
     
     @else if (icono==='sobremi'){
      <div class="col-lg-6 col-md-6 col-sm-12 text-center desplazar-derecha">  
@@ -39,15 +46,21 @@
       <app-experiencia></app-experiencia>
     </div> 
     }
+    @else if (icono==='formacion'){
+      <app-formacion></app-formacion>
+    }
+    <!--@else if (icono==='descarga'){
+      <a href="/CVMCarmenNudi.pdf" download="CVMCarmenNudi.pdf" class="btn btn-primary">
+  📄 Descargar CV
+      </a>
+    }-->
      </div>
      <div class="col-lg-4 col-md-5 col d-flex justify-content-end align-items-end p-4">
       <div class="d-flex justify-content align-items">
         <a (click)="chatbox()">
           <img src="/Talking_bubble_vector_art_illustration.jpg" alt="Chatbox" width="100" height="100">
         </a>
-     <!-- <button mat-icon-button ">
-  Talking_bubble_vector_art_illustration.jpg
-</button>-->
+     
       </div>
      </div>
 </div>
