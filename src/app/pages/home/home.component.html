@@ -9,9 +9,13 @@
     <div class="d-flex flex-column gap-2 w-50 mt-5 mb-5">
         <button class="btn btn-celeste" (click)="mostrar('sobremi')">Sobre mí</button>
         <button class="btn btn-celeste" (click)="mostrar('experiencia')">Experiencia Profesional</button>
-         <button class="btn btn-celeste" (click)="mostrar('experienciaP')">Experiencia Práctica</button>
-          <button class="btn btn-celeste" (click)="mostrar('tecnologia')">Tecnologias Clave</button>
-          <button class="btn btn-celeste" (click)="mostrar('formacion')">Formación</button>
+        <button class="btn btn-celeste" (click)="mostrar('experienciaP')">Experiencia Práctica</button>
+        <button class="btn btn-celeste" (click)="mostrar('tecnologia')">Tecnologias Clave</button>
+        <button class="btn btn-celeste" (click)="mostrar('formacion')">Formación</button>
+        <!--<button class="btn btn-celeste" (click)="mostrar('descarga')">Descargar curriculum</button>-->
+        <a class="btn btn-celeste" href="/CVMCarmenNudi.pdf" download>
+      Descargar CV
+      </a>
       </div>
 
        <!--Contacto fijo-->
@@ -45,6 +49,11 @@
     @else if (icono==='formacion'){
       <app-formacion></app-formacion>
     }
+    <!--@else if (icono==='descarga'){
+      <a href="/CVMCarmenNudi.pdf" download="CVMCarmenNudi.pdf" class="btn btn-primary">
+  📄 Descargar CV
+      </a>
+    }-->
      </div>
      <div class="col-lg-4 col-md-5 col d-flex justify-content-end align-items-end p-4">
       <div class="d-flex justify-content align-items">
