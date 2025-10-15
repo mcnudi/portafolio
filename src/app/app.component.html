@@ -1,3 +1,13 @@
+<header class="d-flex w-100">
+   <app-cabecera class="w-100"></app-cabecera>
+</header>
 <main>
-  <router-outlet></router-outlet>
+  <div class="row h-100">
+    <div class="col">
+      <app-parte-izquierda></app-parte-izquierda>
+    </div>
+    <div class="col">
+      <router-outlet></router-outlet>
+    </div>
+ </div>
 </main>

@@ -1,12 +1,12 @@
-.foto-portafolio {
+/*.foto-portafolio {
   width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 50%; /* asegura que quede redonda */
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+ /* box-shadow: 0 0 15px rgba(0,0,0,0.3);
   display: block;
   margin: 0 auto; /* centra en su contenedor */
-}
+/*}*/
 
 .icono {
   position: absolute;
@@ -18,17 +18,7 @@
   /*box-shadow: 0 0 10px rgba(0,0,0,0.2);*/
   /*transition: transform 0.2s;*/
 }
-.btn-celeste {
-  background-color: #72a8bc; /* celeste */
-  /*color: white;  */           /* texto blanco */
-  border: none;
-  font-size: 30px; /* aumenta o reduce a tu gusto */
-  font-weight: 500;
-}
 
-.btn-celeste:hover {
-  background-color: #009acd; /* un celeste más oscuro al pasar el ratón */
-}
 
 /*.icono:hover {
   transform: scale(1.2);
