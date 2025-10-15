@@ -8,7 +8,7 @@ import { DescripcionComponent } from '../descripcion/descripcion.component';
 @Component({
   selector: 'app-experiencia',
   //imports: [CommonModule, TimelineModule],
-  imports: [CommonModule, ExperienciaComponent],
+  imports: [CommonModule],
   templateUrl: './experiencia.component.html',
   styleUrl: './experiencia.component.css'
 })
@@ -77,7 +77,6 @@ ngOnInit():void{
 );
 }
 
-//personas.sort((a, b) => a.edad - b.edad);
 
   descripcion(exp:Iexperiencia){
 this.dialog.open(DescripcionComponent, {
