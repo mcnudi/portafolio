@@ -1,18 +1,13 @@
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
-import { NombreComponent } from '../nombre/nombre.component';
-import { ContactoComponent } from '../contacto/contacto.component';
-import { SobremiComponent } from '../sobremi/sobremi.component';
 import { Router, RouterLink } from '@angular/router';
-import { ExperienciaComponent } from '../experiencia/experiencia.component';
 import { TestimoniosComponent } from '../testimonios/testimonios.component';
 import { MatIconModule } from '@angular/material/icon';
 import { DialogoComponent } from '../dialogo/dialogo.component';
 import { MatDialog } from '@angular/material/dialog';
-import { FormacionComponent } from '../formacion/formacion.component';
 
 @Component({
   selector: 'app-home',
-  imports: [MatIconModule, NombreComponent,ContactoComponent,SobremiComponent,RouterLink,ExperienciaComponent, TestimoniosComponent, FormacionComponent],
+  imports: [MatIconModule, RouterLink,TestimoniosComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 
@@ -25,7 +20,7 @@ export class HomeComponent {
 
   private dialog = inject (MatDialog);
   router = inject(Router);
-  @ViewChild('canvas') canvas!: ElementRef<HTMLCanvasElement>;
+  /*@ViewChild('canvas') canvas!: ElementRef<HTMLCanvasElement>;
    ngAfterViewInit(): void {
     const canvasEl = this.canvas.nativeElement;
   const ctx = canvasEl.getContext('2d');
@@ -84,5 +79,5 @@ ngOnInit(): void {
       height:'1100px',
       position: { right: '30px' }
     });
-  }
+  }*/
 }

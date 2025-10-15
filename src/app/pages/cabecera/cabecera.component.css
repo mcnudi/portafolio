@@ -1,0 +1,12 @@
+.foto-portafolio {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 100% !important; /* asegura que quede redonda */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: block;
+  margin: 0 auto; /* centra en su contenedor */
+}
+.animado {
+  transform: scale(1);
+}
