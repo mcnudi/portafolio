@@ -48,30 +48,30 @@ li{
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 70%; /* línea en el centro */
+  left: -30%; /* línea en el centro */
   width: 4px;
   background: #0d6efd;
-  transform: translateX(-50%);
+  transform: translateX(-30%);
   margin-left: 50px;
   margin-right: 50px;
 }
 
 .timeline-item {
   position: relative;
-  width: 90%;        /* mitad de la pantalla */
+  width: 55%;        /* mitad de la pantalla */
   padding: 1rem;
  
 }
 
 .timeline-item.left {
-  left: 0;           /* pegado al lado izquierdo */
+  left: -80%;           /* pegado al lado izquierdo */
   text-align: right;
   padding-right: 70px;
   /*width: 50%;*/
 }
 
 .timeline-item.right {
-  left: 82%;         /* pegado al lado derecho */
+  left: -20%;         /* pegado al lado derecho */
   text-align: left;
   padding-left: 30px;
   /*width: 50%; */
@@ -90,13 +90,13 @@ li{
 
 .timeline-year {
   position: relative;
-  width: 162%;
+  left: -74%;
   text-align: center;
   margin: 2rem 0;   /* espacio arriba y abajo */
 }
 
 .timeline-year span {
-  background: #95491d;       /* fondo blanco para que corte la línea */
+  background: #95491d;
   padding: 5px 15px;
   border: 2px solid #0d6efd;
   border-radius: 20px;
