@@ -3,5 +3,6 @@ export interface Iexperiencia {
     cliente:string,
     fecha:string,
     cargo:string,
-    descripcion:string
+    descripcion:string,
+    tiempo:string
 }

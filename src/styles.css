@@ -17,12 +17,20 @@ h1, h2, h3 {
   color: #95491d;
   text-align: center !important;
 }
+
+h1.experiencia {
+  position: relative;
+  left: -22%;
+  transform: translateX(-22%);
+}
 p{
    font-family: 'Great Vibes', serif;
   /*font-size: 18px; */
   color: #95491d;
   text-align:left;
 }
+
+
 .k-timeline-track {
   background-color: #000 !important; /* color de la línea */
   width: 2px !important;             /* grosor */
