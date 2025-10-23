@@ -10,6 +10,5 @@ import { Iexperiencia } from '../../interfaces/iexperiencia';
   styleUrl: './descripcion.component.css'
 })
 export class DescripcionComponent {
-  //data:Iexperiencia = Inject(MAT_DIALOG_DATA);
 data = inject<Iexperiencia>(MAT_DIALOG_DATA);
 }
