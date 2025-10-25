@@ -4,6 +4,7 @@
   border: none;
   font-size: 30px; /* aumenta o reduce a tu gusto */
   font-weight: 500;
+  width: 350px;
 }
 
 .btn-celeste:hover {
