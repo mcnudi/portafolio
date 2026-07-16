@@ -38,9 +38,8 @@ li{
 .timeline {
   position: relative;
   margin: 0 auto;
-  padding: 2rem 0;
-  width: 100%;
   max-width: 900px;
+  left:550px;
 }
 
 .timeline::before {

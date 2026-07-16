@@ -6,6 +6,17 @@ import { Iexperiencia } from '../interfaces/iexperiencia';
 })
 export class ExperienciaServiceService {
     private experiencias: Iexperiencia[] = [
+      {
+        empresa: 'Altia',
+      cliente: 'Ministerio de Educación',
+      fecha: 'Nov 2025',
+      cargo: 'Analista Java',
+      descripcion: `
+        - Desarrollé microservicios REST con JPA y SQL.
+        - Participé en reuniones ágiles semanales.
+      `,
+      tiempo:'Nov 2025 - May 2026'
+      },
     {
       empresa: 'Eviden (Grupo Atos)',
       cliente: 'Canal de Isabel II',

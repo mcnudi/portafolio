@@ -11,14 +11,17 @@ export class CabeceraComponent {
  @ViewChild('canvas') canvas!: ElementRef<HTMLCanvasElement>;
    ngAfterViewInit(): void {
     const canvasEl = this.canvas.nativeElement;
+    canvasEl.width = canvasEl.clientWidth;
+    canvasEl.height =100;
   const ctx = canvasEl.getContext('2d');
   if (!ctx) return;
 
   const texto = "Desarrolladora full stack Java, Spring Boot, Angular";
-  let x = canvasEl.width; // arranca desde la derecha
+  let x = canvasEl.width +1000; // arranca desde la derecha
   const speed = 3; // velocidad
 
-  const fontSize = Math.floor(canvasEl.width / 6);
+  const fontSize = 60;
+  Math.floor(canvasEl.width / 6);
   ctx.font = `${fontSize}px Great Vibes`;
   ctx.fillStyle = "#95491d";
 

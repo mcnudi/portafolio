@@ -9,3 +9,6 @@
     /*min-width: 400px; */  /* 🔹 más largo mínimo */
   /*max-width: 90%;   */      /* Tamaño mínimo */
 /*}*/
+.d-flex.flex-column.gap-5 {
+  align-items: center;           /* 🔹 centra horizontalmente */
+}
