@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+html,body {
     background:#efd184;
   border: 2px solid #c2a968;
   border-radius: 8px;
@@ -11,6 +11,9 @@ body {
   color: #95491d;
   font-size: 30px; /* aumenta o reduce a tu gusto */
   font-weight: 500;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 h1, h2, h3 {
   font-family: 'Great Vibes', cursive;
@@ -20,8 +23,7 @@ h1, h2, h3 {
 
 h1.experiencia {
   position: relative;
-  left: -22%;
-  transform: translateX(-22%);
+  left: -10%;
 }
 p{
    font-family: 'Great Vibes', serif;
@@ -31,14 +33,14 @@ p{
 }
 
 
-.k-timeline-track {
-  background-color: #000 !important; /* color de la línea */
-  width: 2px !important;             /* grosor */
-}
-::ng-deep .k-timeline-label {
-  color: #007bff;   /* azul */
+/*.k-timeline-track {
+  background-color: #000 !important;
+  width: 2px !important;             
+}*/
+/*::ng-deep .k-timeline-label {
+  color: #007bff;
   font-weight: bold;
-}
+}*/
 
 /* Línea central del timeline */
 .k-timeline-axis {
@@ -76,18 +78,13 @@ p{
   font-weight: 400;
 }
 
-.bocadillo{
-    background-color: #cfd2d5; 
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 50px;
-    display: inline-block;         /* Se ajusta al contenido */
-    min-width: 700px;   /* 🔹 más largo mínimo */
-  max-width: 100%;         /* Tamaño mínimo */
-  /*width: 400px;*/
+.bocadillo {
+  background-color: #cfd2d5;
+  padding: 30px;
+  border-radius: 50px;
+  max-width: 1500px;         /* Limita el ancho */
+  width: 90%;              /* Ocupa todo el ancho disponible */
+  margin: 0 auto;        /* Centra horizontalmente */
+  
 }
-.d-flex.flex-column.gap-5 {
-  align-items: center;           /* 🔹 centra horizontalmente */
-}
+

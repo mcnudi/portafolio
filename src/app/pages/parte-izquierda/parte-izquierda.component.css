@@ -10,3 +10,9 @@
 .btn-celeste:hover {
   background-color: #009acd; /* un celeste más oscuro al pasar el ratón */
 }
+
+:host {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
